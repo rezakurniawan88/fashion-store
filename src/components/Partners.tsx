@@ -7,7 +7,6 @@ import DiorLogo from "../assets/diorlogo.png";
 function Partners() {
     return (
         <div className="mt-20">
-            <h1 className="text-2xl font-semibold text-center">Our Partners</h1>
             <div className="flex gap-16 justify-center items-center mb-20 mt-10">
                 <img src={NikeLogo} alt="logo-nike" className="w-28 opacity-30" />
                 <img src={AdidasLogo} alt="logo-adidas" className="w-44 opacity-30" />

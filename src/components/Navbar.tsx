@@ -7,15 +7,13 @@ function Navbar() {
         setIsOpen(!isOpen);
     };
 
-    console.log(isOpen);
-
     return (
         <>
-            <nav className="flex justify-between items-center px-10 py-4 border-b-[1px]">
+            <nav className="flex justify-between items-center px-6 md:px-10 py-4 border-b-[1px]">
                 <h1 className="header-title font-bold text-xl">ROW.CO</h1>
-                <ul className="hidden sm:flex gap-6 font-semibold">
+                <ul className="navbar-text hidden sm:flex gap-6 font-medium">
                     <li className="hover:border-b-2 hover:border-black cursor-pointer">Home</li>
-                    <li className="hover:border-b-2 hover:border-black cursor-pointer">Man</li>
+                    <li className="hover:border-b-2 hover:border-black cursor-pointer">Men</li>
                     <li className="hover:border-b-2 hover:border-black cursor-pointer">Women</li>
                     <li className="hover:border-b-2 hover:border-black cursor-pointer">Kids</li>
                     <li className="hover:border-b-2 hover:border-black cursor-pointer">Promo</li>
@@ -50,12 +48,12 @@ function Navbar() {
                 </div>
             </nav>
             <nav className={isOpen ? "navbar-overlay show-navbar z-30" : "navbar-overlay"}>
-                <ul className="menu-list w-full h-full flex flex-col justify-center items-center gap-7">
-                    <li className="font-bold text-center">Home</li>
-                    <li className="font-bold text-center">Man</li>
-                    <li className="font-bold text-center">Women</li>
-                    <li className="font-bold text-center">Kids</li>
-                    <li className="font-bold text-center">Promo</li>
+                <ul className="menu-list w-full h-full flex flex-col justify-center items-center gap-7 text-xl">
+                    <li className="font-bold text-center hover:text-blue-500 cursor-pointer">Home</li>
+                    <li className="font-bold text-center hover:text-blue-500 cursor-pointer">Man</li>
+                    <li className="font-bold text-center hover:text-blue-500 cursor-pointer">Women</li>
+                    <li className="font-bold text-center hover:text-blue-500 cursor-pointer">Kids</li>
+                    <li className="font-bold text-center hover:text-blue-500 cursor-pointer">Promo</li>
                 </ul>
             </nav>
         </>
